@@ -1,0 +1,43 @@
+{
+  "name": "@smithkistyle/eslint-config",
+  "version": "4.0.1",
+  "description": "An ESLint config with Airbnb JavaScript, React, and Prettier baked-in.",
+  "author": "Ian K Smith <smithki707@gmail.com>",
+  "license": "MIT",
+  "main": "eslint.js",
+  "repository": "https://gitlab.com/smithki/eslint-config",
+  "bugs": "https://gitlab.com/smithki/eslint-config/issues",
+  "keywords": [
+    "eslint",
+    "airbnb",
+    "prettier",
+    "react"
+  ],
+  "scripts": {
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-config-prettier": "^2.9.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^8.2.0",
+    "eslint": "^4.17.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "prettier": "^1.7.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.17.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "prettier": "^1.10.2"
+  }
+}
