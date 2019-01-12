@@ -1,12 +1,12 @@
 {
-  "name": "@smithkistyle/eslint-config",
+  "name": "@ikscodes/eslint-config",
   "version": "4.0.1",
   "description": "An ESLint config with Airbnb JavaScript, React, and Prettier baked-in.",
   "author": "Ian K Smith <smithki707@gmail.com>",
   "license": "MIT",
   "main": "eslint.js",
-  "repository": "https://gitlab.com/smithki/eslint-config",
-  "bugs": "https://gitlab.com/smithki/eslint-config/issues",
+  "repository": "https://github.com/smithki/eslint-config",
+  "bugs": "https://github.com/smithki/eslint-config/issues",
   "keywords": [
     "eslint",
     "airbnb",
