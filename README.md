@@ -10,7 +10,7 @@
 Install via `npm`:
 
 ```sh
-npm install @smithkistyle/eslint-config --save-dev
+npm install @ikscodes/eslint-config --save-dev
 ```
 
 Ensure you also have the required `peerDependencies` installed:
@@ -25,7 +25,7 @@ In `.eslintrc`:
 
 ```json
 {
-  "extends": "@smithkistyle/eslint-config"
+  "extends": "@ikscodes/eslint-config"
 }
 ```
 
