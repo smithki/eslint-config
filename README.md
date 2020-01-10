@@ -43,7 +43,7 @@ Alternatively, Linux and macOS users can run this command:
 # Using Yarn:
 (
   export PKG=@ikscodes/eslint-config;
-  yarn info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add -D "$PKG@latest"
+  npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add -D "$PKG@latest"
 )
 ```
 
