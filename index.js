@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
-    './rules/base',
-    './rules/typescript',
     './rules/airbnb',
+    './rules/typescript',
+    './rules/eslint',
     './rules/prettier',
   ].map(require.resolve),
 };

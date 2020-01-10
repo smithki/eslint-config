@@ -60,12 +60,15 @@ In `.eslintrc`:
 By default, all configuration from [`./rules`](./rules) is included. Each configuration files is available as a separate file so you can mix in just what you need! So you can also do:
 
 ```javascript
+// NOTE: This is the recommended order of inclusion.
+//       Prettier should always be the last in the list.
+
 {
   "extends": [
-    '@ikscodes/eslint-config/rules/base',
-    '@ikscodes/eslint-config/rules/typescript',
     '@ikscodes/eslint-config/rules/airbnb',
-    '@ikscodes/eslint-config/rules/prettier', // NOTE: Prettier should always be the last in the list.
+    '@ikscodes/eslint-config/rules/typescript',
+    '@ikscodes/eslint-config/rules/eslint',
+    '@ikscodes/eslint-config/rules/prettier',
   ]
 }
 ```
