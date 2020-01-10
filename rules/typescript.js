@@ -24,6 +24,8 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-non-null-assertion': 0,
     '@typescript-eslint/no-empty-interface': 0,
+    '@typescript-eslint/require-await': 0,
+    '@typescript-eslint/no-misused-promises': 0,
 
     // TypeScript highlights unused variables for us, making them easy to spot.
     // In some cases, listing callback arguments (even unused ones) is helpful
