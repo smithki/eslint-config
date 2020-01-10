@@ -6,7 +6,8 @@ module.exports = {
     //   -> eslint-plugin-react
     //   -> eslint-plugin-react-hooks
     // https://github.com/airbnb/javascript
-    'airbnb'
+    'airbnb',
+    'plugin:import/typescript',
   ],
 
   rules: {
@@ -16,6 +17,14 @@ module.exports = {
 
     // JSX a11y rules
     // https://github.com/evcohen/eslint-plugin-jsx-a11y
+    // rules go here...
+
+    // React rules
+    // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
+    // rules go here...
+
+    // React Hooks rules
+    // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
     // rules go here...
   }
 };
