@@ -1,6 +1,4 @@
 module.exports = {
-  extends: ['eslint/recommended'],
-
   rules: {
     // Core ESLint rules
     // https://eslint.org/docs/rules/
