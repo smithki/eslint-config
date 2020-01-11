@@ -85,7 +85,7 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
   - [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react)
   - [`eslint-plugin-react-hooks`](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks)
 - [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier)
-- [`@typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
+- [`@typescript-eslint`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
 
 ## 🗜️ Versioning
 
