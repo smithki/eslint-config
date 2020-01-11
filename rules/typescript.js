@@ -33,7 +33,8 @@ module.exports = {
     'no-unused-vars': 0,
     '@typescript-eslint/no-unused-vars': 0,
 
-    // This rule is too strict, even if
+    // This rule is too strict, flagging violations even if the reference is at
+    // a lower scope (and therefore defined).
     '@typescript-eslint/no-use-before-define': 0,
 
     // Sometimes you can't avoid camelCase (such as when consuming APIs)...
