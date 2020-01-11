@@ -22,10 +22,10 @@ yarn add -D @ikscodes/eslint-config
 List the required peer dependencies:
 
 ```sh
-npm info "eslint-config-airbnb@latest" peerDependencies
+npm info "@ikscodes/eslint-config@latest" peerDependencies
 ```
 
-If using **`npm@>5.x`**, use this shortcut (this will detect `yarn` automatically):
+If using **`npm@>5.x`**, use this shortcut (`yarn` will be automatically detected, if in use):
 
 ```sh
 npx install-peerdeps --dev eslint-config-airbnb
@@ -57,7 +57,7 @@ In `.eslintrc`:
 }
 ```
 
-By default, all configuration from [`./rules`](./rules) is included. Each configuration files is available as a separate file so you can mix in just what you need! So you can also do:
+By default, all configuration from [`./rules`](./rules) is included. Depending on your use-case, only a subset of configuration may be required:
 
 ```javascript
 // NOTE: This is the recommended order of inclusion.
@@ -73,7 +73,7 @@ By default, all configuration from [`./rules`](./rules) is included. Each config
 }
 ```
 
-## ⚡ Configuration
+## ⚡ Configurations
 
 ### Rules
 
