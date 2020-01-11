@@ -7,7 +7,7 @@
 
 ## 🔗 Installation
 
-### Install Configuration Via `npm` or `yarn`:
+### Install via `npm` or `yarn`:
 
 ```sh
 npm install @ikscodes/eslint-config --save-dev
@@ -17,13 +17,7 @@ npm install @ikscodes/eslint-config --save-dev
 yarn add -D @ikscodes/eslint-config
 ```
 
-### Install Required `peerDependencies`:
-
-List the required peer dependencies:
-
-```sh
-npm info "@ikscodes/eslint-config@latest" peerDependencies
-```
+### Install required `peerDependencies`:
 
 If using **`npm@>5.x`**, use this shortcut (`yarn` will be automatically detected, if in use):
 
@@ -73,7 +67,7 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
 }
 ```
 
-## ⚡ Configurations
+## ⚡ Configuration
 
 ### Rules
 
