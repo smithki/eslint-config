@@ -25,7 +25,7 @@ If using **`npm@>5.x`**, use this shortcut (`yarn` will be automatically detecte
 npx install-peerdeps --dev eslint-config-airbnb
 ```
 
-Alternatively, Linux and macOS users can run this command:
+Alternatively, Linux and macOS users can one of these commands:
 
 ```sh
 # Using NPM:
@@ -33,7 +33,9 @@ Alternatively, Linux and macOS users can run this command:
   export PKG=@ikscodes/eslint-config;
   npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
 )
+```
 
+```sh
 # Using Yarn:
 (
   export PKG=@ikscodes/eslint-config;
