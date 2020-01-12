@@ -17,7 +17,11 @@ module.exports = {
     // well-understood syntax. Why disallow it?
     'no-plusplus': 0,
 
+    // Disable some nagging rules that make little difference to code
+    // cleanliness...
     'prefer-template': 1,
+    'max-classes-per-file': 0,
+    'lines-between-class-members': 0,
   },
 
   parserOptions: {

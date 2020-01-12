@@ -18,6 +18,9 @@ module.exports = {
     // Avoiding default imports is a generally-accepted pattern in TypeScript.
     'import/prefer-default-export': 0,
 
+    // This disallows JSX syntax in `.tsx` files, which breaks TypeScript...
+    'react/jsx-filename-extension': 0,
+
     // Disable some nagging rules that make little difference to code
     // cleanliness...
     '@typescript-eslint/explicit-function-return-type': 0,
@@ -39,5 +42,9 @@ module.exports = {
 
     // Sometimes you can't avoid camelCase (such as when consuming APIs)...
     '@typescript-eslint/camelcase': 0,
+
+    // This is generally a good rule, but a pain point during development (i.e.:
+    // passing `console.log` to a promise's `.catch`).
+    '@typescript-eslint/unbound-method': 0,
   }
 };
