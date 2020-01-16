@@ -11,15 +11,20 @@ module.exports = {
   plugins: ['@typescript-eslint'],
 
   rules: {
-    // Import's `no-cycle` rule can create false-positives when circularly importing types.
+    // Import's `no-cycle` rule causes false-positives when circularly importing types.
     // @see https://github.com/benmosher/eslint-plugin-import/issues/1453
     'import/no-cycle': 0,
 
     // Avoiding default imports is a generally-accepted pattern in TypeScript.
     'import/prefer-default-export': 0,
 
-    // This disallows JSX syntax in `.tsx` files, which breaks TypeScript...
-    'react/jsx-filename-extension': 0,
+    // Allow JSX syntax in `.tsx` files.
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.jsx', '.tsx'],
+      },
+    ],
 
     // Disable some nagging rules that make little difference to code
     // cleanliness...
@@ -46,5 +51,5 @@ module.exports = {
     // This is generally a good rule, but a pain point during development (i.e.:
     // passing `console.log` to a promise's `.catch`).
     '@typescript-eslint/unbound-method': 0,
-  }
+  },
 };

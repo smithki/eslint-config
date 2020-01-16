@@ -3,11 +3,11 @@
 [![code style: airbnb](https://img.shields.io/badge/code%20style-airbnb-blue.svg?style=flat)](https://github.com/airbnb/javascript)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
-> An [ESLint config](https://eslint.org/docs/user-guide/configuring) with Airbnb JavaScript, TypeScript, React, and Prettier baked-in.
+> An opinionated [ESLint config](https://eslint.org/docs/user-guide/configuring) with Airbnb JavaScript, TypeScript, React, and Prettier baked-in.
 
-## 🔗 Installation
+## 🔗 Getting Started
 
-### Install via `npm` or `yarn`:
+### Install via NPM or Yarn:
 
 ```sh
 npm install @ikscodes/eslint-config --save-dev
@@ -61,10 +61,10 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
 
 {
   "extends": [
-    '@ikscodes/eslint-config/rules/airbnb',
-    '@ikscodes/eslint-config/rules/typescript',
-    '@ikscodes/eslint-config/rules/eslint',
-    '@ikscodes/eslint-config/rules/prettier',
+    "@ikscodes/eslint-config/rules/airbnb",
+    "@ikscodes/eslint-config/rules/typescript",
+    "@ikscodes/eslint-config/rules/eslint",
+    "@ikscodes/eslint-config/rules/prettier"
   ]
 }
 ```

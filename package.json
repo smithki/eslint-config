@@ -1,7 +1,7 @@
 {
   "name": "@ikscodes/eslint-config",
   "version": "6.0.10",
-  "description": "An ESLint config with Airbnb JavaScript, TypeScript, React, and Prettier baked-in.",
+  "description": "An opinionated ESLint config with Airbnb JavaScript, TypeScript, React, and Prettier baked-in.",
   "author": "Ian K Smith <smithki707@gmail.com>",
   "license": "MIT",
   "main": "index.js",

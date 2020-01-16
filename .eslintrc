@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "./rules/airbnb",
+    "./rules/eslint",
+    "./rules/prettier"
+  ]
+}

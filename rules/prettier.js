@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    // Disables rules that would interfere with Prettier-enforced codestyle.
+    // Disable rules that would interfere with Prettier-enforced codestyle.
     'plugin:prettier/recommended',
     'prettier',
     'prettier/@typescript-eslint',
@@ -19,18 +19,22 @@ module.exports = {
   ],
 
   rules: {
-    // Prettier rules
+    // Default Prettier configuration
     // https://github.com/prettier/eslint-plugin-prettier
-    'prettier/prettier': ['error', {
-      printWidth: 120,
-      tabWidth: 2,
-      semi: true,
-      singleQuote: true,
-      trailingComma: 'all',
-      bracketSpacing: true,
-      jsxBracketSameLine: false,
-    }, {
-      usePrettierrc: true
-    }],
-  }
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 120,
+        tabWidth: 2,
+        semi: true,
+        singleQuote: true,
+        trailingComma: 'all',
+        bracketSpacing: true,
+        jsxBracketSameLine: false,
+      },
+      {
+        usePrettierrc: true,
+      },
+    ],
+  },
 };

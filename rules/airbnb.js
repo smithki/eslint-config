@@ -8,4 +8,10 @@ module.exports = {
     // https://github.com/airbnb/javascript
     'airbnb',
   ],
+
+  rules: {
+    // This rule has some noticeable bugs when linting TypeScript and generally
+    // enforces noisy code.
+    'react/no-unescaped-entities': 0,
+  },
 };

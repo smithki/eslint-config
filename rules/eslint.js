@@ -7,7 +7,7 @@ module.exports = {
     'no-console': 0,
 
     // Sometimes you can't avoid camelCase (such as when consuming APIs)...
-    'camelcase': 0,
+    camelcase: 0,
 
     // This rule is too strict, flagging violations even if the reference is at
     // a lower scope (and therefore defined).
