@@ -14,6 +14,9 @@
     "typescript",
     "react"
   ],
+  "scripts": {
+    "lint": "eslint --fix ./**/*.js"
+  },
   "dependencies": {
     "@typescript-eslint/parser": "^2.15.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -28,6 +31,8 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.6.1",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0",
     "prettier": "^1.10.2",
     "typescript": "^3.7.4"
   },
@@ -41,5 +46,13 @@
     "eslint-plugin-react": "^7.15.1",
     "eslint-plugin-react-hooks": "^1.7.0",
     "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
   }
 }
