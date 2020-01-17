@@ -13,5 +13,7 @@ module.exports = {
     // This rule has some noticeable bugs when linting TypeScript and generally
     // enforces noisy code.
     'react/no-unescaped-entities': 0,
+
+    'react/jsx-props-no-spreading': 0,
   },
 };
