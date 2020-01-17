@@ -26,7 +26,7 @@ module.exports = {
       },
     ],
 
-    // Disable some nagging rules that make little difference to code
+    // Disable/soften some nagging rules that make little difference to code
     // cleanliness...
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/no-explicit-any': 0,
