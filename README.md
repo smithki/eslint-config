@@ -69,9 +69,13 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
 }
 ```
 
-## ⚡ Configuration
+### Teaching `eslint-plugin-import` How to Understand TypeScript
 
-### Rules
+This configuration includes [`eslint-import-resolver-typescript`](https://github.com/alexgorbatchev/eslint-import-resolver-typescript). This enables `eslint-plugin-import` to parse your TypeScript [`paths`](https://www.typescriptlang.org/docs/handbook/module-resolution.html) options to resolve modules. This requires [some additional configuration in `.eslintrc`.](https://github.com/alexgorbatchev/eslint-import-resolver-typescript#configuration)
+
+## ⚡ What's Included?
+
+### Configurations
 
 - [`eslint`](https://eslint.org/docs/rules/)
 - [`eslint-config-airbnb`](https://github.com/airbnb/javascript)
@@ -86,6 +90,10 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
   - [`eslint-plugin-react-hooks`](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks)
 - [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier)
 - [`@typescript-eslint`](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
+
+### Additional Tooling
+
+- [`eslint-import-resolver-typescript`](https://github.com/alexgorbatchev/eslint-import-resolver-typescript)
 
 ## 🗜️ Versioning
 

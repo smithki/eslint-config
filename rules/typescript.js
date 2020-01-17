@@ -52,4 +52,10 @@ module.exports = {
     // passing `console.log` to a promise's `.catch`).
     '@typescript-eslint/unbound-method': 0,
   },
+
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+  },
 };
