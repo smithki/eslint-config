@@ -48,9 +48,14 @@ module.exports = {
     // Sometimes you can't avoid camelCase (such as when consuming APIs)...
     '@typescript-eslint/camelcase': 0,
 
-    // This is generally a good rule, but a pain point during development (i.e.:
-    // passing `console.log` to a promise's `.catch`).
+    // This is generally an okay rule, but a pain point during development
+    // (i.e.: passing `console.log` to a promise's `.catch`) or if you rely
+    // heavily on functional programming.
     '@typescript-eslint/unbound-method': 0,
+
+    // TypeScript should replace `prop-types` for most use-cases, so this rule
+    // is disabled by default.
+    'react/prop-types': 0,
   },
 
   settings: {

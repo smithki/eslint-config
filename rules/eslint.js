@@ -3,7 +3,7 @@ module.exports = {
     // Core ESLint rules
     // https://eslint.org/docs/rules/
 
-    // Too strict, especially in development...
+    // Too strict, especially during development...
     'no-console': 0,
 
     // Sometimes you can't avoid camelCase (such as when consuming APIs)...
@@ -17,12 +17,13 @@ module.exports = {
     // well-understood syntax. Why disallow it?
     'no-plusplus': 0,
 
-    // Disable some nagging rules that make little difference to code
+    // Disable/soften some nagging rules that make little difference to code
     // cleanliness...
     'prefer-template': 1,
     'max-classes-per-file': 0,
     'lines-between-class-members': 0,
     'no-restricted-syntax': 0,
+    'require-await': 0,
   },
 
   parserOptions: {
