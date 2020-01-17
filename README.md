@@ -50,6 +50,9 @@ In `.eslintrc`:
 ```javascript
 {
   "extends": "@ikscodes/eslint-config"
+  "parserOptions": {
+    "project": "path/to/tsconfig.json"
+  }
 }
 ```
 
@@ -72,6 +75,20 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
 ### Teaching `eslint-plugin-import` How to Understand TypeScript
 
 This configuration includes [`eslint-import-resolver-typescript`](https://github.com/alexgorbatchev/eslint-import-resolver-typescript). This enables `eslint-plugin-import` to parse your TypeScript [`paths`](https://www.typescriptlang.org/docs/handbook/module-resolution.html) options to resolve modules. This requires [some additional configuration in `.eslintrc`.](https://github.com/alexgorbatchev/eslint-import-resolver-typescript#configuration)
+
+A basic setup might look similar to:
+
+```javascript
+{
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "directory": "path/to/tsconfig.json"
+      }
+    }
+  }
+}
+```
 
 ## ⚡ What's Included?
 

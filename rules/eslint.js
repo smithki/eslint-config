@@ -22,6 +22,7 @@ module.exports = {
     'prefer-template': 1,
     'max-classes-per-file': 0,
     'lines-between-class-members': 0,
+    'no-restricted-syntax': 0,
   },
 
   parserOptions: {
