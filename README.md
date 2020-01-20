@@ -72,6 +72,20 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
 }
 ```
 
+### Configuring Prettier
+
+By default, ESLint will search for a [`.prettierrc` file](https://prettier.io/docs/en/configuration.html) to understand your code-formatting preferences. [I've also created a library of default Prettier settings that I like to use.](https://github.com/smithki/prettier-config)
+
+While not recommended, if you would prefer to set your Prettier configuration inside ESLint itself, you can:
+
+```javascript
+{
+  "rules": {
+    "prettier/prettier": ["error", {/* ...Prettier settings here */}, { "usePrettierrc": false }]
+  }
+}
+```
+
 ### Teaching `eslint-plugin-import` How to Understand TypeScript
 
 This configuration includes [`eslint-import-resolver-typescript`](https://github.com/alexgorbatchev/eslint-import-resolver-typescript). This enables `eslint-plugin-import` to parse your TypeScript [`paths`](https://www.typescriptlang.org/docs/handbook/module-resolution.html) options to resolve modules. This requires [some additional configuration in `.eslintrc`.](https://github.com/alexgorbatchev/eslint-import-resolver-typescript#configuration)

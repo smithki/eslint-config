@@ -23,15 +23,7 @@ module.exports = {
     // https://github.com/prettier/eslint-plugin-prettier
     'prettier/prettier': [
       'error',
-      {
-        printWidth: 120,
-        tabWidth: 2,
-        semi: true,
-        singleQuote: true,
-        trailingComma: 'all',
-        bracketSpacing: true,
-        jsxBracketSameLine: false,
-      },
+      {},
       {
         usePrettierrc: true,
       },
