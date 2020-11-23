@@ -22,7 +22,7 @@ yarn add -D @ikscodes/eslint-config
 If using **`npm@>5.x`**, use this shortcut (`yarn` will be automatically detected, if in use):
 
 ```sh
-npx install-peerdeps --dev eslint-config-airbnb
+npx install-peerdeps --dev @ikscodes/eslint-config
 ```
 
 Alternatively, Linux and macOS users can one of these commands:
@@ -97,7 +97,7 @@ A basic setup might look similar to:
   "settings": {
     "import/resolver": {
       "typescript": {
-        "directory": "path/to/tsconfig.json"
+        "project": "path/to/tsconfig.json"
       }
     }
   }
