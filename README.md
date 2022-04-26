@@ -23,7 +23,7 @@ yarn add -D @ikscodes/eslint-config
 
 ### Install required `peerDependencies`:
 
-If using `npm@>7.x`, peer dependencies [will be installed automatically](https://github.blog/2021-02-02-npm-7-is-now-generally-available/), assuming no conflicts arise between peer dependency versions within your project.
+If using **`npm@>7.x`**, peer dependencies [will be installed automatically](https://github.blog/2021-02-02-npm-7-is-now-generally-available/), assuming no conflicts arise between peer dependency versions within your project.
 
 If using **`npm@>5.x`**, use this shortcut (`yarn` will be automatically detected, if in use):
 
