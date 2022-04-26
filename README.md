@@ -59,7 +59,7 @@ In `.eslintrc`:
 }
 ```
 
-By default, all configuration from [`./rules`](./rules) is included. Depending on your use-case, only a subset of the included rules may be applicable. You have the option to granularly customize how your ESLint configuration extends from `@ikscodes/eslint-config`:
+By default, all configuration from [`./rules`](./rules) is included (including TypeScript support). Depending on your use-case, only a subset of the included rules may be applicable. You have the option to granularly customize how your ESLint configuration extends from `@ikscodes/eslint-config`:
 
 ```javascript
 
@@ -81,6 +81,26 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
         "@ikscodes/eslint-config/rules/typescript", // 👈 TypeScript-specific rules
         "@ikscodes/eslint-config/rules/eslint",
         "@ikscodes/eslint-config/rules/prettier",
+      ]
+    }
+  ]
+}
+```
+
+If granularity is no matter, but still some JavaScript-specific and/or TypeScript-specific overrides are necessary, the previous example is equivalent to this:
+
+```javascript
+
+{
+  "extends": [
+    "@ikscodes/eslint-config/javascript",
+  ],
+
+  "overrides": [
+    {
+      "files": ['**/*.ts', '**/*.tsx'],
+      "extends": [
+        "@ikscodes/eslint-config/typescript"
       ]
     }
   ]

@@ -1,3 +1,4 @@
+// Combined JavaScipt + TypeScript entry-point.
 module.exports = {
   // JavaScript
   extends: ['./rules/airbnb', './rules/eslint', './rules/prettier'].map(require.resolve),

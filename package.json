@@ -7,7 +7,8 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "prettierrc.js",
+    "javascript.js",
+    "typescript.js",
     "rules"
   ],
   "repository": "https://github.com/smithki/eslint-config",
