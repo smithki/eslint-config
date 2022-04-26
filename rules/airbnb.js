@@ -35,6 +35,8 @@ module.exports = {
       },
     ],
 
+    'import/extensions': 0,
+
     'import/order': [
       'error',
       {
