@@ -9,15 +9,21 @@
 
 ### Install via NPM or Yarn:
 
+Using `npm`:
+
 ```sh
 npm install @ikscodes/eslint-config --save-dev
 ```
+
+Using `yarn`:
 
 ```sh
 yarn add -D @ikscodes/eslint-config
 ```
 
 ### Install required `peerDependencies`:
+
+If using `npm@>7.x`, peer dependencies [will be installed automatically](https://github.blog/2021-02-02-npm-7-is-now-generally-available/), assuming no conflicts arise between peer dependency versions within your project.
 
 If using **`npm@>5.x`**, use this shortcut (`yarn` will be automatically detected, if in use):
 
@@ -56,18 +62,30 @@ In `.eslintrc`:
 }
 ```
 
-By default, all configuration from [`./rules`](./rules) is included. Depending on your use-case, only a subset of configuration may be required:
+By default, all configuration from [`./rules`](./rules) is included. Depending on your use-case, only a subset of the included rules may be applicable. You have the option to granularly customize how your ESLint configuration extends from `@ikscodes/eslint-config`:
 
 ```javascript
-// NOTE: This is the recommended order of inclusion.
-//       Prettier should always be the last in the list.
 
 {
+  // JAVASCRIPT: This is the recommended order of inclusion.
+  //             Prettier should always be the last in the list.
   "extends": [
     "@ikscodes/eslint-config/rules/airbnb",
-    "@ikscodes/eslint-config/rules/typescript",
     "@ikscodes/eslint-config/rules/eslint",
     "@ikscodes/eslint-config/rules/prettier"
+  ],
+
+  // TYPESCRIPT: If using TypeScript, add the following `overrides` entry:
+  "overrides": [
+    {
+      "files": ['**/*.ts', '**/*.tsx'],
+      "extends": [
+        "@ikscodes/eslint-config/rules/airbnb",
+        "@ikscodes/eslint-config/rules/typescript", // 👈 TypeScript-specific rules
+        "@ikscodes/eslint-config/rules/eslint",
+        "@ikscodes/eslint-config/rules/prettier",
+      ]
+    }
   ]
 }
 ```
@@ -76,7 +94,7 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
 
 By default, ESLint will search for a [`.prettierrc` file](https://prettier.io/docs/en/configuration.html) to understand your code-formatting preferences. [I've also created a library of default Prettier settings that I like to use.](https://github.com/smithki/prettier-config)
 
-While not recommended, if you would prefer to set your Prettier configuration inside ESLint itself, you can:
+Though not recommended, if you would prefer to set your Prettier configuration inside of ESLint itself, you can do so:
 
 ```javascript
 {

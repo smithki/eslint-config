@@ -7,6 +7,7 @@ module.exports = {
     //   -> eslint-plugin-react-hooks
     // https://github.com/airbnb/javascript
     'airbnb',
+    'airbnb/hooks',
   ],
 
   rules: {
@@ -15,5 +16,25 @@ module.exports = {
     'react/no-unescaped-entities': 0,
 
     'react/jsx-props-no-spreading': 0,
+
+    'no-restricted-syntax': [
+      'error',
+      // Override some outdated opinions from Airbnb
+      {
+        selector: 'ForInStatement',
+        message:
+          'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+      },
+      {
+        selector: 'LabeledStatement',
+        message:
+          'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+      },
+      {
+        selector: 'WithStatement',
+        message:
+          '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+      },
+    ],
   },
 };

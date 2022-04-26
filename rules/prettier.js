@@ -2,14 +2,6 @@ module.exports = {
   extends: [
     // Disable rules that would interfere with Prettier-enforced codestyle.
     'plugin:prettier/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
-    'prettier/standard',
-    'prettier/babel',
-    'prettier/flowtype',
-    'prettier/unicorn',
-    'prettier/vue',
   ],
 
   plugins: [
