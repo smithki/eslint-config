@@ -56,9 +56,6 @@ In `.eslintrc`:
 ```javascript
 {
   "extends": "@ikscodes/eslint-config"
-  "parserOptions": {
-    "project": "path/to/tsconfig.json"
-  }
 }
 ```
 
@@ -90,6 +87,18 @@ By default, all configuration from [`./rules`](./rules) is included. Depending o
 }
 ```
 
+### Configuring TypeScript
+
+By default, ESLint will search for `./tsconfig.json` to understand your TypeScript preferences. You can customize this with some additional configuration in `.eslintrc`:
+
+```javascript
+{
+  "parserOptions": {
+    "project": "path/to/tsconfig.json"
+  }
+}
+```
+
 ### Configuring Prettier
 
 By default, ESLint will search for a [`.prettierrc` file](https://prettier.io/docs/en/configuration.html) to understand your code-formatting preferences. [I've also created a library of default Prettier settings that I like to use.](https://github.com/smithki/prettier-config)
@@ -104,9 +113,9 @@ Though not recommended, if you would prefer to set your Prettier configuration i
 }
 ```
 
-### Teaching `eslint-plugin-import` How to Understand TypeScript
+### Resolving TypeScript imports with `eslint-plugin-import`
 
-This configuration includes [`eslint-import-resolver-typescript`](https://github.com/alexgorbatchev/eslint-import-resolver-typescript). This enables `eslint-plugin-import` to parse your TypeScript [`paths`](https://www.typescriptlang.org/docs/handbook/module-resolution.html) options to resolve modules. This requires [some additional configuration in `.eslintrc`.](https://github.com/alexgorbatchev/eslint-import-resolver-typescript#configuration)
+This configuration includes [`eslint-import-resolver-typescript`](https://github.com/alexgorbatchev/eslint-import-resolver-typescript). This enables `eslint-plugin-import` to parse your TypeScript [`paths`](https://www.typescriptlang.org/docs/handbook/module-resolution.html) option to resolve imported modules. By default, `eslint-plugin-import` will search for `./tsconfig.json` to understand your TypeScript preferences. You can customize this with [some additional configuration in `.eslintrc`.](https://github.com/alexgorbatchev/eslint-import-resolver-typescript#configuration)
 
 A basic setup might look similar to:
 
