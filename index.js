@@ -7,6 +7,6 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       extends: ['./rules/airbnb', './rules/typescript', './rules/eslint', './rules/prettier'].map(require.resolve),
-    }
-  ]
+    },
+  ],
 };
