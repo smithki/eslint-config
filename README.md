@@ -68,6 +68,7 @@ By default, all configuration from [`./rules`](./rules) is included (including T
   //             Prettier should always be the last in the list.
   "extends": [
     "@ikscodes/eslint-config/rules/airbnb",
+    "@ikscodes/eslint-config/rules/airbnb/hooks",
     "@ikscodes/eslint-config/rules/eslint",
     "@ikscodes/eslint-config/rules/prettier"
   ],
@@ -78,6 +79,7 @@ By default, all configuration from [`./rules`](./rules) is included (including T
       "files": ['**/*.ts', '**/*.tsx'],
       "extends": [
         "@ikscodes/eslint-config/rules/airbnb",
+        "@ikscodes/eslint-config/rules/airbnb/hooks",
         "@ikscodes/eslint-config/rules/typescript", // 👈 TypeScript-specific rules
         "@ikscodes/eslint-config/rules/eslint",
         "@ikscodes/eslint-config/rules/prettier",
