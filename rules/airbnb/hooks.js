@@ -5,4 +5,4 @@ module.exports = {
     // https://github.com/airbnb/javascript
     'airbnb/hooks',
   ],
-}
+};
