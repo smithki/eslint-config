@@ -5,7 +5,7 @@ module.exports = {
     //   -> eslint-plugin-jsx-a11y
     //   -> eslint-plugin-react
     // https://github.com/airbnb/javascript
-    'airbnb',
+    require.resolve('eslint-config-airbnb'),
   ],
 
   rules: {
@@ -17,7 +17,7 @@ module.exports = {
 
     'no-restricted-syntax': [
       'error',
-      // Override some outdated opinions from Airbnb
+      // Override some opinions from Airbnb
       {
         selector: 'ForInStatement',
         message:

@@ -3,6 +3,6 @@ module.exports = {
     // Airbnb provides:
     //   -> eslint-plugin-react-hooks
     // https://github.com/airbnb/javascript
-    'airbnb/hooks',
+    require.resolve('eslint-config-airbnb/hooks'),
   ],
 };

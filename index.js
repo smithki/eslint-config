@@ -1,4 +1,6 @@
-// Combined JavaScipt + TypeScript entry-point.
+require('@rushstack/eslint-patch/modern-module-resolution');
+
+// Combined JavaScipt + TypeScript configuration.
 module.exports = {
   // JavaScript
   extends: ['./rules/airbnb', './rules/airbnb/hooks', './rules/eslint', './rules/prettier'].map(require.resolve),
