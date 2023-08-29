@@ -123,7 +123,7 @@ By default, ESLint will search for `./tsconfig.json` to understand your TypeScri
 
 #### Using Typed Linting
 
-To enable [Typed Linting](https://typescript-eslint.io/linting/typed-linting/) via `@typescript-eslint`, use the `"@ikscodes/eslint-config/typescript-type-checked"` config base like so:
+To enable [Typed Linting](https://typescript-eslint.io/linting/typed-linting/) via `@typescript-eslint`, use the `"@ikscodes/eslint-config/typescript-type-checked"` configuration base like so:
 
 ```javascript
 {
@@ -142,21 +142,7 @@ To enable [Typed Linting](https://typescript-eslint.io/linting/typed-linting/) v
 }
 ```
 
-### Configuring Prettier
-
-By default, ESLint will search for a [`.prettierrc` file](https://prettier.io/docs/en/configuration.html) to understand your code-formatting preferences. [I've also created a library of default Prettier settings that I like to use.](https://github.com/smithki/prettier-config)
-
-Though not recommended, if you would prefer to set your Prettier configuration inside of ESLint itself, you can do so:
-
-```javascript
-{
-  "rules": {
-    "prettier/prettier": ["error", {/* ...Prettier settings here */}, { "usePrettierrc": false }]
-  }
-}
-```
-
-### Resolving TypeScript imports with `eslint-plugin-import`
+#### Resolving TypeScript imports with `eslint-plugin-import`
 
 This configuration includes [`eslint-import-resolver-typescript`](https://github.com/alexgorbatchev/eslint-import-resolver-typescript). This enables `eslint-plugin-import` to parse your TypeScript [`paths`](https://www.typescriptlang.org/docs/handbook/module-resolution.html) option to resolve imported modules. By default, `eslint-plugin-import` will search for `./tsconfig.json` to understand your TypeScript preferences. You can customize this with [some additional configuration in `.eslintrc`.](https://github.com/alexgorbatchev/eslint-import-resolver-typescript#configuration)
 
@@ -170,6 +156,20 @@ A basic setup might look similar to:
         "project": "path/to/tsconfig.json"
       }
     }
+  }
+}
+```
+
+### Configuring Prettier
+
+By default, ESLint will search for a [`.prettierrc` file](https://prettier.io/docs/en/configuration.html) to understand your code-formatting preferences. [I've also created a library of default Prettier settings that I like to use.](https://github.com/smithki/prettier-config)
+
+Though not recommended, if you would prefer to set your Prettier configuration inside of ESLint itself, you can do so:
+
+```javascript
+{
+  "rules": {
+    "prettier/prettier": ["error", {/* ...Prettier settings here */}, { "usePrettierrc": false }]
   }
 }
 ```
@@ -205,6 +205,8 @@ A basic setup might look similar to:
 | | |
 x.x.x
 ```
+
+It's recommended that you pin the version of `@ikscodes/eslint-config` with a [semver tilde (`~`)](https://devhints.io/semver) so as to avoid unintended breaking changes when updating your NPM depedencies.
 
 ## ⚖️ License
 
