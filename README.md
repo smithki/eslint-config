@@ -92,7 +92,6 @@ By default, all configuration from [`./rules`](./rules) is included (including T
 If granularity is no matter, but still some JavaScript-specific and/or TypeScript-specific overrides are necessary, the previous example is equivalent to this:
 
 ```javascript
-
 {
   "extends": [
     "@ikscodes/eslint-config/javascript",
@@ -103,6 +102,7 @@ If granularity is no matter, but still some JavaScript-specific and/or TypeScrip
       "files": ['**/*.ts', '**/*.tsx'],
       "extends": [
         "@ikscodes/eslint-config/typescript"
+        // or: "@ikscodes/eslint-config/typescript-type-checked"
       ]
     }
   ]
@@ -118,6 +118,27 @@ By default, ESLint will search for `./tsconfig.json` to understand your TypeScri
   "parserOptions": {
     "project": "path/to/tsconfig.json"
   }
+}
+```
+
+#### Using Typed Linting
+
+To enable [Typed Linting](https://typescript-eslint.io/linting/typed-linting/) via `@typescript-eslint`, use the `"@ikscodes/eslint-config/typescript-type-checked"` config base like so:
+
+```javascript
+{
+  "extends": [
+    "@ikscodes/eslint-config/javascript",
+  ],
+
+  "overrides": [
+    {
+      "files": ['**/*.ts', '**/*.tsx'],
+      "extends": [
+        "@ikscodes/eslint-config/typescript-type-checked"
+      ]
+    }
+  ]
 }
 ```
 

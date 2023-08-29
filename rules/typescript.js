@@ -5,14 +5,7 @@ module.exports = {
     project: './tsconfig.json',
   },
 
-  extends: [
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:import/typescript',
-  ],
-
-  plugins: ['@typescript-eslint'],
+  extends: ['plugin:@typescript-eslint/recommended', 'plugin:import/typescript'],
 
   rules: {
     // Import's `no-cycle` rule causes false-positives when circularly importing types.
